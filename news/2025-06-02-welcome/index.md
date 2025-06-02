@@ -1,7 +1,7 @@
 ---
 slug: blog-welcome
 title: Welcome to the TrailCompass newsroom
-authors: [itoncek,jellycz]
+authors: [itoncek]
 tags: [status]
 ---
 Hi everyone,

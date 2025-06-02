@@ -51,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/MadeByIToncek/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/TrailCompass/wiki/blob/main/',
         },
         blog: {
           path: "news",
@@ -126,7 +126,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/TrailCompass',
               },
             ],
           },
