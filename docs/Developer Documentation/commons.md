@@ -24,4 +24,5 @@ In the demo provided above, this subexchange, called `ITestExchange`, defines tw
 
 The same can be said about `castCardWithOtherCard()` method. It consumes [`CastCardWithOtherCardRequest`](https://github.com/TrailCompass/commons/blob/main/src/main/java/space/itoncek/trailcompass/proto/requests/deck/CastCardWithOtherCardRequest.java), which is a record, containing the token of a player, `UUID` of the cast card and `UUID` of another card from hider's deck. It returns [`OkResponse`](https://github.com/TrailCompass/commons/blob/main/src/main/java/space/itoncek/trailcompass/proto/responses/generic/OkResponse.java), which is equivalent to `void` return type in Java.
 
-Creation of these requests will be covered in later parts.
+# Creating a subexchange
+Every subexchange should represent a different module of the TrailCompass protocol. For example, all the packets related to login and authentication should be contained within one subexchange, in this case called [`IAuthExchange`](https://github.com/TrailCompass/commons/blob/main/src/main/java/space/itoncek/trailcompass/proto/exchange/IAuthExchange.java).
