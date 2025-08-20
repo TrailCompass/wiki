@@ -34,7 +34,7 @@ public interface ITestExchange {
 
 :::danger
 
-When commiting any changes in the API, it is necessary to update the version number. More information about this procedure can be found in the [relevant chapter](../Versioning) of this documentation!
+When commiting any changes in the API, it is necessary to update the version number. More information about this procedure can be found in the [relevant chapter](../versioning.md) of this documentation!
 
 :::
 
