@@ -10,7 +10,7 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary', styles.heroBanner)} style={{backgroundColor:"#001b36ff"}}>
       <div className="container">
         <img src="/img/title.svg"></img>
         <div className={styles.buttons}>

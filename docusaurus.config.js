@@ -151,8 +151,9 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} TrailCompass developer team <br> Built with Docusaurus.`,
       },
       prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.github,
+        theme: prismThemes.vsLight,
+        darkTheme: prismThemes.vsDark,
+        additionalLanguages: ['java', 'kotlin']
       },
     }),
 };

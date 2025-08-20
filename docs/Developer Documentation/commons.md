@@ -4,7 +4,7 @@ sidebar_position: 2
 # Commons
 This [repository](https://github.com/TrailCompass/commons) is the glue, holding the entire software together. It consists of two main parts. API part is an implementation of the communication protocol, Proto part defines the entire protocol, including all shared objects.
 
-## Protocol
+## Protocol {#protocol}
 This part of the commons repository contains the exchange definitions, exchanged objects, request and response packets and utilities, needed for generic exchanges. Exchange definitions are written like interfaces in the following style:
 ```java
 public interface IExchange {
@@ -24,5 +24,17 @@ In the demo provided above, this subexchange, called `ITestExchange`, defines tw
 
 The same can be said about `castCardWithOtherCard()` method. It consumes [`CastCardWithOtherCardRequest`](https://github.com/TrailCompass/commons/blob/main/src/main/java/space/itoncek/trailcompass/proto/requests/deck/CastCardWithOtherCardRequest.java), which is a record, containing the token of a player, `UUID` of the cast card and `UUID` of another card from hider's deck. It returns [`OkResponse`](https://github.com/TrailCompass/commons/blob/main/src/main/java/space/itoncek/trailcompass/proto/responses/generic/OkResponse.java), which is equivalent to `void` return type in Java.
 
-# Creating a subexchange
+# Creating a subexchange {#creating-subexchanges}
 Every subexchange should represent a different module of the TrailCompass protocol. For example, all the packets related to login and authentication should be contained within one subexchange, in this case called [`IAuthExchange`](https://github.com/TrailCompass/commons/blob/main/src/main/java/space/itoncek/trailcompass/proto/exchange/IAuthExchange.java).
+
+When creating a new subexchange, you should first define the exchange's methods and packet definitions (this will be explained [later](#packet-definitions)). This should be written in the following format: 
+```java
+public interface ITestExchange {
+	ServerVersionResponse version(ServerVersionRequest request) throws BackendException;
+	OkResponse castCardWithOtherCard(CastCardWithOtherCardRequest req) throws BackendException;
+}
+```
+
+# Creating a method {#creating-method}
+
+## Creating packet definitions {#packet-definitions}
