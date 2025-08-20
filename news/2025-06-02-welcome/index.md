@@ -1,5 +1,5 @@
 ---
-slug: blog-welcome
+slug: 2025-06-02-welcome
 title: Welcome to the TrailCompass newsroom
 authors: [itoncek]
 tags: [status]

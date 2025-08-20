@@ -1,12 +1,12 @@
 itoncek:
   name: IToncek
-  title: TrailCompass developer
+  title: TrailCompass maintainer
   url: https://itoncek.space
   image_url: https://github.com/madebyitoncek.png
   page:
     # customize the url of the author page at /blog/authors/<permalink>
     permalink: '/itoncek'
-  email: itoncek@itoncek.space
+  email: me@itoncek.space
   socials:
     github: MadeByIToncek
     bluesky: 'itoncek.space'
@@ -14,7 +14,7 @@ itoncek:
 
 jellycz:
   name: JellyCZ
-  title: TrailCompass developer
+  title: TrailCompass maintainer
   image_url: https://github.com/danielhejduk.png
   page:
     # customize the url of the author page at /blog/authors/<permalink>
